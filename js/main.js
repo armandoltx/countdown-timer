@@ -39,7 +39,7 @@ window.onload=function(){
 
       }
       if ( minutes < 5 ) {
-        message.innerHTML = '5 minutes left';
+        message.innerHTML = 'Less than 5 minutes!';
         wrapper.style.backgroundColor = '#AA0000';
         inputMin.style.backgroundColor = '#AA0000';
       }
@@ -66,10 +66,7 @@ window.onload=function(){
     });//end buttonStop
 
     buttonReset.addEventListener('click', function () {
-      clearInterval(counter);
-      Spansec.innerHTML = '00';
-      inputMin.value = '--';
-
+      window.location.reload();
     }); // end buttonReset
   });// end buttonStart
 
