@@ -7,15 +7,20 @@
   <script src="js/main.js" charset="utf-8"></script>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
+    <h1>CountDown Timer</h1>
     <div class="show">
-      <div class="message" id="message">Let's Get Started</div>
-      <input type="text" name="name" value="20"><span>:</span><span class="seconds" id="seconds">59</span>
+      <div class="message" id="message">Let's Get Started, insert your minutes</div>
+        <div class="numbers">
+          <input id="Inputminutes" type="text" name="name" value="" placeholder="00">
+          <span class="colon"> : </span>
+          <span class="seconds" id="Spanseconds">00</span>
+        </div>
     </div><!-- end show -->
     <div class="buttons">
-      <button type="button" class="btn start" id="ButtonStart" name="button">Start</button>
-      <button type="button" class="btn stop" id="ButtonStop" name="button">Stop</button>
-
+      <button type="button" class="btn start" id="buttonStart" name="button">Start</button>
+      <button type="button" class="btn stop" id="buttonStop" name="button">Stop</button>
+      <button type="button" class="btn reset" id="buttonReset" name="button">reset</button>
 
     </div><!-- end buttons -->
 

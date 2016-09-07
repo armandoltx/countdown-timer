@@ -1,1 +1,50 @@
-body {}
+@import 'https://fonts.googleapis.com/css?family=Comfortaa';
+body {
+    background-color: #f2f2f2;
+    font-family: 'Comfortaa', cursive;
+}
+.wrapper {
+    font-family: 'Comfortaa', cursive;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #FFA000;
+    padding: 20px;
+    color: #F25C05;
+}
+.numbers {
+    margin-left: -30px;
+    margin-bottom: 10px;
+}
+.message {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    border: none;
+    background-color: #FFA000;
+    width: 98px;
+    font-size: 60px;
+    text-align: right;
+    font-family: 'Comfortaa', cursive;
+    color: #F25C05;
+}
+span {
+    font-size: 60px;
+    font-family: 'Comfortaa', cursive;
+}
+button {
+    background-color: #212121;
+    border: none;
+    color: #F25C05;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 1px solid #AA0000;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #F25C05;
+    color: #AA0000;
+}
