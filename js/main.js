@@ -13,14 +13,13 @@ window.onload=function(){
 
   buttonStart.addEventListener("click",function(){
     var inputMin = document.getElementById("Inputminutes");
-    if ( isNaN (inputMin) ){
-      alert ('Must be a number');
-      inputMin.value = '00';
-      return false;
-    }
     var minutes = inputMin.value;
     // it has to be inside the function otherwise when the page is loaded the value is empty... and it wont take any new value because it is stored in the var before I typed it.
-
+    // to check if it is a number
+    if ( isNaN (minutes) === true ){
+      alert('Must be a number');
+      window.location.reload();
+    }
     // when we start it needs to be -1 in minutes
     minutes= minutes - 1;
 
